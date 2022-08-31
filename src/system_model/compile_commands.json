@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/ls12-gpuhost/ros_system_model/build/system_model",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/ls12-gpuhost/ros_system_model/src/system_model/include -isystem /opt/ros/galactic/include    -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/system_composition.dir/src/system_composition.cpp.o -c /home/ls12-gpuhost/ros_system_model/src/system_model/src/system_composition.cpp",
+  "file": "/home/ls12-gpuhost/ros_system_model/src/system_model/src/system_composition.cpp"
+},
+{
+  "directory": "/home/ls12-gpuhost/ros_system_model/build/system_model",
+  "command": "/usr/bin/c++  -DCOMPOSITION_NODES_DLL -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dcomposition_nodes_EXPORTS -I/home/ls12-gpuhost/ros_system_model/src/system_model/include -isystem /opt/ros/galactic/include  -fPIC   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/composition_nodes.dir/src/sensor_node.cpp.o -c /home/ls12-gpuhost/ros_system_model/src/system_model/src/sensor_node.cpp",
+  "file": "/home/ls12-gpuhost/ros_system_model/src/system_model/src/sensor_node.cpp"
+},
+{
+  "directory": "/home/ls12-gpuhost/ros_system_model/build/system_model",
+  "command": "/usr/bin/c++  -DCOMPOSITION_NODES_DLL -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dcomposition_nodes_EXPORTS -I/home/ls12-gpuhost/ros_system_model/src/system_model/include -isystem /opt/ros/galactic/include  -fPIC   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/composition_nodes.dir/src/filter_node.cpp.o -c /home/ls12-gpuhost/ros_system_model/src/system_model/src/filter_node.cpp",
+  "file": "/home/ls12-gpuhost/ros_system_model/src/system_model/src/filter_node.cpp"
+},
+{
+  "directory": "/home/ls12-gpuhost/ros_system_model/build/system_model",
+  "command": "/usr/bin/c++  -DCOMPOSITION_NODES_DLL -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dcomposition_nodes_EXPORTS -I/home/ls12-gpuhost/ros_system_model/src/system_model/include -isystem /opt/ros/galactic/include  -fPIC   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/composition_nodes.dir/src/subscription_actuator_node.cpp.o -c /home/ls12-gpuhost/ros_system_model/src/system_model/src/subscription_actuator_node.cpp",
+  "file": "/home/ls12-gpuhost/ros_system_model/src/system_model/src/subscription_actuator_node.cpp"
+},
+{
+  "directory": "/home/ls12-gpuhost/ros_system_model/build/system_model",
+  "command": "/usr/bin/c++  -DCOMPOSITION_NODES_DLL -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dcomposition_nodes_EXPORTS -I/home/ls12-gpuhost/ros_system_model/src/system_model/include -isystem /opt/ros/galactic/include  -fPIC   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/composition_nodes.dir/src/timer_actuator_node.cpp.o -c /home/ls12-gpuhost/ros_system_model/src/system_model/src/timer_actuator_node.cpp",
+  "file": "/home/ls12-gpuhost/ros_system_model/src/system_model/src/timer_actuator_node.cpp"
+},
+{
+  "directory": "/home/ls12-gpuhost/ros_system_model/build/system_model",
+  "command": "/usr/bin/c++  -DCOMPOSITION_NODES_DLL -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dcomposition_nodes_EXPORTS -I/home/ls12-gpuhost/ros_system_model/src/system_model/include -isystem /opt/ros/galactic/include  -fPIC   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/composition_nodes.dir/src/subscription_fusion_node.cpp.o -c /home/ls12-gpuhost/ros_system_model/src/system_model/src/subscription_fusion_node.cpp",
+  "file": "/home/ls12-gpuhost/ros_system_model/src/system_model/src/subscription_fusion_node.cpp"
+},
+{
+  "directory": "/home/ls12-gpuhost/ros_system_model/build/system_model",
+  "command": "/usr/bin/c++  -DCOMPOSITION_NODES_DLL -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -Dcomposition_nodes_EXPORTS -I/home/ls12-gpuhost/ros_system_model/src/system_model/include -isystem /opt/ros/galactic/include  -fPIC   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/composition_nodes.dir/src/timer_fusion_node.cpp.o -c /home/ls12-gpuhost/ros_system_model/src/system_model/src/timer_fusion_node.cpp",
+  "file": "/home/ls12-gpuhost/ros_system_model/src/system_model/src/timer_fusion_node.cpp"
+}
+]

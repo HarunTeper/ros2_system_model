@@ -1,0 +1,16 @@
+System input:
+
+YAML Files:
+
+Executor1: SingleThreaded/Multithreaded
+    Node1: Sensor Period WCET MessageType PubTopic
+    Node2: Filter SubTopic PubTopic WCET
+    Node3: Actuator SubTopic WCET
+    Node4: TimerFusion SubTopics WCETSSubscribers PubTopic Period WCETTimer
+    Node5: Subscriptionfusion SubTopics WCETS TriggerSubscriptions ALL/ANY PUBTOPICS
+    Node6: TimerActuator SubTopics WCETS Period WCET
+
+Per Subscription, Timer: MessageType
+
+Launch File:
+Specify configuration YAML and go
