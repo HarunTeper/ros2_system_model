@@ -18,6 +18,8 @@ void FilterNode::subscription_callback(const std_msgs::msg::Header msg) {
   }
   std::cout << "Received message: frame_id \"" << msg.frame_id << "\" stamp \""
             << msg.stamp.sec << " " << msg.stamp.nanosec << "\"" << std::endl;
+
+  publisher->publish(msg);
 }
 
 #include "rclcpp_components/register_node_macro.hpp"

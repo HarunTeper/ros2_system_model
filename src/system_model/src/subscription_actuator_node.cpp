@@ -17,6 +17,7 @@ void SubscriptionActuatorNode::subscription_callback(
   }
   std::cout << "Received message: frame_id \"" << msg.frame_id << "\" stamp \""
             << msg.stamp.sec << " " << msg.stamp.nanosec << "\"" << std::endl;
+  
 }
 
 #include "rclcpp_components/register_node_macro.hpp"

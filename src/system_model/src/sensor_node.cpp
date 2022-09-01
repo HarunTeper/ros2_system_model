@@ -4,17 +4,12 @@
 
 SensorNode::SensorNode(const rclcpp::NodeOptions &options)
     : rclcpp::Node(options.arguments()[0], options) {
-
-  timer = this->create_wall_timer(std::chrono::milliseconds(1000), [this]() { timer_callback(); });
-  publisher = this->create_publisher<std_msgs::msg::Header>("scan", 1);
-  this->wcet = 1000;
-
-  // timer = this->create_wall_timer(
-  //     std::chrono::milliseconds(stoi(options.arguments()[1])),
-  //     [this]() { timer_callback(); });
-  // publisher = this->create_publisher<std_msgs::msg::Header>(
-  //     options.arguments()[3], stoi(options.arguments()[4]));
-  // this->wcet = stol(options.arguments()[2]);
+  timer = this->create_wall_timer(
+      std::chrono::milliseconds(stoi(options.arguments()[1])),
+      [this]() { timer_callback(); });
+  publisher = this->create_publisher<std_msgs::msg::Header>(
+      options.arguments()[3], stoi(options.arguments()[4]));
+  this->wcet = stol(options.arguments()[2]);
 }
 
 void SensorNode::timer_callback() {

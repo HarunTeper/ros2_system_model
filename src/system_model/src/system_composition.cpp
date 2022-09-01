@@ -57,6 +57,7 @@ void initialize_string_nodes_map() {
 
 std::vector<std::thread> thread_list;
 std::vector<rclcpp::Executor::SharedPtr> executor_list;
+std::vector<rclcpp::Node::SharedPtr> node_list;
 
 int main(int argc, char *argv[]) {
   initialize_string_executor_map();
@@ -107,6 +108,8 @@ int main(int argc, char *argv[]) {
 
       switch (map_string_nodes[it2->first.as<std::string>()]) {
       case filter: {
+        std::cout << "filter node" << std::endl;
+        std::cout << it2->second["name"].as<std::string>() << std::endl;
         rclcpp::NodeOptions options;
         std::vector<std::string> arguments = {
             it2->second["name"].as<std::string>(),
@@ -120,9 +123,12 @@ int main(int argc, char *argv[]) {
         std::shared_ptr<FilterNode> filter_node =
             std::make_shared<FilterNode>(options);
         executor->add_node(filter_node);
+        node_list.push_back(filter_node);
         break;
       }
       case sensor: {
+        std::cout << "sensor node" << std::endl;
+        std::cout << it2->second["name"].as<std::string>() << std::endl;
         rclcpp::NodeOptions options;
         std::vector<std::string> arguments = {
             it2->second["name"].as<std::string>(),
@@ -134,9 +140,12 @@ int main(int argc, char *argv[]) {
         std::shared_ptr<SensorNode> sensor_node =
             std::make_shared<SensorNode>(options);
         executor->add_node(sensor_node);
+        node_list.push_back(sensor_node);
         break;
       }
       case subscription_actuator: {
+        std::cout << "actuator node" << std::endl;
+        std::cout << it2->second["name"].as<std::string>() << std::endl;
         rclcpp::NodeOptions options;
         std::vector<std::string> arguments = {
             it2->second["name"].as<std::string>(),
@@ -147,6 +156,7 @@ int main(int argc, char *argv[]) {
         std::shared_ptr<SubscriptionActuatorNode> subscription_actuator_node =
             std::make_shared<SubscriptionActuatorNode>(options);
         executor->add_node(subscription_actuator_node);
+        node_list.push_back(subscription_actuator_node);
         break;
       }
       case subscription_fusion: {
