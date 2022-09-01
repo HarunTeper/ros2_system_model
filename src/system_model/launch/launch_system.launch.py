@@ -23,7 +23,6 @@ def include_system_description(context: LaunchContext):
     system_composition_node = Node(
         package='system_model',
         executable='system_composition',
-        name='system_composition',
         output='screen',
         arguments=[
             '-system', default_config_file]

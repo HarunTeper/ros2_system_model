@@ -108,8 +108,6 @@ int main(int argc, char *argv[]) {
 
       switch (map_string_nodes[it2->first.as<std::string>()]) {
       case filter: {
-        std::cout << "filter node" << std::endl;
-        std::cout << it2->second["name"].as<std::string>() << std::endl;
         rclcpp::NodeOptions options;
         std::vector<std::string> arguments = {
             it2->second["name"].as<std::string>(),
@@ -127,8 +125,6 @@ int main(int argc, char *argv[]) {
         break;
       }
       case sensor: {
-        std::cout << "sensor node" << std::endl;
-        std::cout << it2->second["name"].as<std::string>() << std::endl;
         rclcpp::NodeOptions options;
         std::vector<std::string> arguments = {
             it2->second["name"].as<std::string>(),
@@ -144,8 +140,6 @@ int main(int argc, char *argv[]) {
         break;
       }
       case subscription_actuator: {
-        std::cout << "actuator node" << std::endl;
-        std::cout << it2->second["name"].as<std::string>() << std::endl;
         rclcpp::NodeOptions options;
         std::vector<std::string> arguments = {
             it2->second["name"].as<std::string>(),
