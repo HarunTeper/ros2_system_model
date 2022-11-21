@@ -2,26 +2,14 @@ single_threaded_executor:
   sensor:
     name: "Sensor1"
     period: 1000
-    wcet: 200000000
+    wcet: 400000000
     publisher_topic: /scan
     publisher_buffer_size: 1
-  subscription_actuator:
-    name: "Actuator1"
-    wcet: 200000000
-    subscription_topic: /filter2
-    subscription_buffer_size: 1
   filter:
     name: "Filter1"
-    wcet: 200000000
+    wcet: 400000000
     subscription_topic: /scan
     publisher_topic: /filter
-    subscription_buffer_size: 1
-    publisher_buffer_size: 1
-  filter:
-    name: "Filter2"
-    wcet: 200000000
-    subscription_topic: /filter
-    publisher_topic: /filter2
     subscription_buffer_size: 1
     publisher_buffer_size: 1
 

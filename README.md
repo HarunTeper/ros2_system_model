@@ -24,7 +24,7 @@ You can use the following executor types:
 	single_threaded_executor
 	static_single_threaded_executor
 	multi_threaded_executor
-	
+
 You can use the following node types:
 
 	filter # receives and sends messages with subscriber
@@ -69,3 +69,7 @@ They have the following structure:
 
 The script will create an executor with all specified nodes. After that , it launches one thread per specified executor to run the systems.
 
+## Addition for running on isolated Cores
+Install and build a custom Linux kernel with preempt-rt patches, following this [Repo](https://github.com/nilhoel1/preempt_rt_scripts_ROS2). Also setup coresponding kernel parameters.
+
+When installed use the run.sh script as reference for running ROS2 instances on isolated cores. The script runs two ROS2 executors one on CPU2 and one on CPU3.

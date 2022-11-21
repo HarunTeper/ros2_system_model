@@ -2,3 +2,5 @@ src/system_model/.cache/
 build
 install
 log
+nohup*
+perf.*
